@@ -1,3 +1,5 @@
+h1. "THIS REPO HAS MOVED, SORRY"[newrepo]
+
 h1. is_paranoid ( same as it ever was )
 
 h3. and you may ask yourself, well, how did I get here?
@@ -101,3 +103,4 @@ h3. Thanks
 Thanks to Rick Olson for acts_as_paranoid which is obviously an inspiration in concept and execution, Ryan Bates for mentioning the idea of using default_scope for this on Ryan Daigle's "post introducing default_scope":defscope, and the Talking Heads for being the Talking Heads. 
 
 [defscope]http://ryandaigle.com/articles/2008/11/18/what-s-new-in-edge-rails-default-scoping
+[newrepo]http://github.com/semanticart/is_paranoid/tree/master
