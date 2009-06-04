@@ -1,4 +1,4 @@
-h1. "THIS REPO HAS MOVED, SORRY"[newrepo]
+h1. "THIS PROJECT HAS MOVED, SORRY":newrepo
 
 h1. is_paranoid ( same as it ever was )
 
