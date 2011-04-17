@@ -193,10 +193,11 @@ module IsParanoid
     # the Model.destroy(id), we don't need to specify those methods
     # separately.
     def destroy
-      return false if callback(:before_destroy) == false
-      result = destroy_without_callbacks
-      callback(:after_destroy)
-      result
+      with_transaction_returning_status do
+        run_callbacks :destroy do
+          destroy_without_callbacks
+        end
+      end
     end
 
     # Set deleted_at flag on a model to field_not_destroyed, effectively
