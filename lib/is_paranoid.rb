@@ -12,7 +12,7 @@ module IsParanoid
 
   def is_paranoid opts = {}
     opts[:field] ||= [:deleted_at, Proc.new{Time.now.utc}, nil]
-    class_inheritable_accessor :destroyed_field, :field_destroyed, :field_not_destroyed
+    class_attribute :destroyed_field, :field_destroyed, :field_not_destroyed
     self.destroyed_field, self.field_destroyed, self.field_not_destroyed = opts[:field]
 
     # This is the real magic. All calls made to this model will append
